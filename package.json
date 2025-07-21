@@ -1,0 +1,49 @@
+{
+  "name": "wms-api",
+  "version": "1.0.0",
+  "description": "Bare bones inventory management system that can be extended into a larger WMS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/demo/palletDemo.ts",
+    "demo": "ts-node src/demo/palletDemo.ts",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "wms",
+    "warehouse",
+    "inventory",
+    "management",
+    "pallet",
+    "lpn"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typeorm": "^0.3.17",
+    "sqlite3": "^5.1.6",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "rimraf": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
