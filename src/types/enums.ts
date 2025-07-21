@@ -1,0 +1,77 @@
+export enum ContainerType {
+  PALLET = 'PALLET',
+  CASE = 'CASE',
+  TOTE = 'TOTE',
+  BOX = 'BOX'
+}
+
+export enum ContainerStatus {
+  ACTIVE = 'ACTIVE',
+  CONSUMED = 'CONSUMED',
+  DAMAGED = 'DAMAGED',
+  QUARANTINE = 'QUARANTINE'
+}
+
+export enum LocationType {
+  RECEIVING = 'RECEIVING',
+  STAGING = 'STAGING',
+  STORAGE = 'STORAGE',
+  PICKING = 'PICKING',
+  SHIPPING = 'SHIPPING',
+  RETURNS = 'RETURNS'
+}
+
+export enum TaskType {
+  PUTAWAY = 'PUTAWAY',
+  PICK = 'PICK',
+  MOVE = 'MOVE',
+  CYCLE_COUNT = 'CYCLE_COUNT',
+  PALLET_BUILD = 'PALLET_BUILD',
+  PALLET_MOVE = 'PALLET_MOVE'
+}
+
+export enum TaskStatus {
+  PENDING = 'PENDING',
+  ASSIGNED = 'ASSIGNED',
+  IN_PROGRESS = 'IN_PROGRESS',
+  COMPLETED = 'COMPLETED',
+  CANCELLED = 'CANCELLED'
+}
+
+export enum TransactionType {
+  RECEIVE = 'RECEIVE',
+  PUTAWAY = 'PUTAWAY',
+  PICK = 'PICK',
+  MOVE = 'MOVE',
+  ADJUST = 'ADJUST',
+  CYCLE_COUNT = 'CYCLE_COUNT',
+  RESERVE = 'RESERVE',
+  RELEASE = 'RELEASE',
+  PALLET_BUILD = 'PALLET_BUILD',
+  PALLET_MOVE = 'PALLET_MOVE'
+}
+
+export enum ItemCondition {
+  GOOD = 'GOOD',
+  DAMAGED = 'DAMAGED',
+  EXPIRED = 'EXPIRED',
+  QUARANTINE = 'QUARANTINE'
+}
+
+export enum PalletStrategy {
+  AUTO_PALLET = 'AUTO_PALLET',
+  MANUAL_PALLET = 'MANUAL_PALLET',
+  LOOSE_RECEIVE = 'LOOSE_RECEIVE'
+}
+
+export enum ReceiptStatus {
+  IN_PROGRESS = 'IN_PROGRESS',
+  COMPLETED = 'COMPLETED'
+}
+
+export enum PurchaseOrderStatus {
+  PENDING = 'PENDING',
+  SHIPPED = 'SHIPPED',
+  RECEIVED = 'RECEIVED',
+  CLOSED = 'CLOSED'
+}
